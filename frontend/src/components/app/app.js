@@ -20,6 +20,8 @@ import { UserContext } from "../../utils/context";
 import styles from "./app.module.css";
 
 function App() {
+  console.log(777);
+  console.log(process.env.REACT_APP_BACKEND_HOST);
   const [userCtx, setUserCtx] = useState(null);
 
   useEffect(() => {
