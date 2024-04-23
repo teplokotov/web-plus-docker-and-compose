@@ -1,3 +1,9 @@
-# Докеризация приложения
+# Докеризация cервиса КупиПодариДай
 
-Перед тем как приступить к выполнению проектной работы разместите в репозитории исходный код фронтенд и бэкенд частей сервиса КупиПодариДай, реализованного вами ранее. 
+IP адрес: 158.160.161.23
+
+Frontend:
+- [https://goodwish.students.nomoredomainswork.ru/](https://goodwish.students.nomoredomainswork.ru/)
+
+Backend:
+- [https://api.goodwish.students.nomoredomainswork.ru/](https://api.goodwish.students.nomoredomainswork.ru/)
