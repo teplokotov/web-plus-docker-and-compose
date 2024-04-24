@@ -12,6 +12,7 @@ services:
     image: image-frontend
     ports:
       - 8081:80
+    restart: unless-stopped
   backend:
     networks:
       - backend
@@ -24,6 +25,9 @@ services:
       - .env
     ports:
       - 4000:3000
+    depends_on:
+      - postgres
+    restart: unless-stopped
   postgres:
     networks:
       - backend
@@ -35,6 +39,7 @@ services:
       - .env
     ports:
       - 5432:5432
+    restart: unless-stopped
   adminer:
     networks:
       - backend
@@ -42,6 +47,7 @@ services:
     image: adminer
     ports:
       - 8080:8080
+    restart: unless-stopped
 volumes:
   postgres_data:
 networks:
